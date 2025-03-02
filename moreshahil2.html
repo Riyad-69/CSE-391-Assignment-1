@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #00c3ff; color: #000000c0; padding: 20px; text-align: center; }
+        nav { text-align: center; padding: 10px; background: hsla(0, 85%, 46%, 0.26); }
+        nav a { margin: 0 15px; text-decoration: none; color: #a71e1e; font-weight: bold; }
+        section { padding: 20px; }
+        img { width: 150px; height: auto; border-radius: 50%; display: block; margin: 10px auto; }
+        h2 { color: #0073e6; }
+        p { font-size: 18px; }
+        .quote { font-style: italic; font-size: 20px; color: rgb(177, 26, 26); text-align: center; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #0073e6; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        @media (max-width: 600px) { table { font-size: 14px; } }
+    </style>
+    
+    <script>
+        function toggleMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    
+    <style>
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dark-mode header {
+            background: #333333;
+            color: #ffffff;
+        }
+        .dark-mode nav {
+            background: #444444;
+        }
+        .dark-mode nav a {
+            color: #ffffff;
+        }
+        .dark-mode th {
+            background-color: #555555;
+        }
+        .dark-mode tr:nth-child(even) {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>READ AL RASHID</h1>
+        <button id="mode-toggle" onclick="toggleMode()">Dark Mode</button>
+        <img src="C:\Users\User\Downloads\IMG_6420 (2).JPG" alt="Read Al Rashid's Photo" >
+    </header>
+    
+    <nav>
+        <a href="#personal-info">Personal Info</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#links">Links</a>
+    </nav>
+    
+    <section id="personal-info">
+        <h2>Personal Information</h2>
+        <p><strong>Name:</strong> MD READ AL RASHID</p>
+        <p><strong>Background:</strong> <span style="color: #0073e6;">Student</span></p>
+        <p class="quote">“We cannot solve problems with the kind of thinking we employed when we came up with them.” —Albert Einstein</p>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor's in Computer Science, <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a></p>
+    </section>
+    
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><b>Web Development:</b> HTML, CSS</li>
+            <li><b>Programming:</b> Python & Flask</li>
+        </ul>
+    </section>
+    
+    <section id="favorites">
+        <h2>My Favorite Movies</h2>
+        <div style="display: flex; align-items: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkc6wpewZHXmv8dyDOSwyXLhtPp1eYRXfoNjO2mVasS1KjK1Bf" alt="Movies" height="400" width="150" style="margin-left: 20px;">
+        </div>
+        <ol>
+            <li>Leo</li>
+            <li>Inception</li>
+            <li>The Dark Knight Rises</li>
+            <li>Jawan</li>
+            <li>Ratsasan</li>
+            <li>Seven</li>
+            <li>Fight Club</li>
+            <li>The Call</li>
+            <li>Old boy</li>
+            <li>Forgotten</li>
+        </ol>
+    </section>
+        
+    </section>
+    <section id="table">
+        <h2>Experience Table</h2>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Education</th>
+                <th>Division</th>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td>Completed HSC.</td>
+                <td>Rajshahi</td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>Completed SSC.</td>
+                <td>Rajshahi</td>
+            </tr>
+            <tr>
+                <td colspan="2">Currenty studying in Brac University.</td>
+                <td>Dhaka</td>
+            </tr>
+        </table>
+    </section>
+    <section id="links">
+        <h2>Links</h2>
+        <h3>Internal Links</h3>
+        <ul>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+        
+        <h3>External Links</h3>
+        <ul>
+            <li>Check out my <a href="https://github.com/read" target="_blank">GitHub profile</a>.</li>
+            <li>Connect with me on <a href="https://linkedin.com/in/read" target="_blank">LinkedIn</a>.</li>
+            <li>Visit the <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a> official website.</li>
+            <li>Join our <a href="https://discord.gg/pUfh82tJ" target="_blank">CSE 391 Discord</a> for discussions.</li>
+        </ul>
+    </section>
+</body>
+<style>
+    #dynamic-footer {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        background: #f1f1f1;
+        text-align: right;
+        padding: 10px;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        color: #555;
+    }
+</style>
+
+<footer id="dynamic-footer">
+    <p>&copy; Shahil all rights reserved</p>
+    <p id="footer-location"></p>
+    <p id="footer-modified"></p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var footer = document.getElementById("dynamic-footer");
+
+        // Set Location and Last Modified Date
+        document.getElementById("footer-location").textContent = "Location: " + window.location.href;
+        document.getElementById("footer-modified").textContent = "Last Modified: " + document.lastModified;
+
+        // Show footer when user scrolls to bottom
+        window.addEventListener("scroll", function() {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                footer.style.display = "block";
+            } else {
+                footer.style.display = "none";
+            }
+        });
+    });
+</script>
+
+
+</html>
